@@ -23,6 +23,6 @@ module.exports = {
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		indent: 'off',
 		'@typescript-eslint/indent': 'off',
-		'@typescript-eslint/ban-ts-ignore': 'off',
+		'@typescript-eslint/ban-ts-comment': 'off',
 	},
 };

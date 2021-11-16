@@ -11,7 +11,6 @@ import 'element-plus/dist/index.css';
 const app = createApp(App);
 
 Object.keys(ElementPlusIcon).map((key) => {
-	// console.log(ElementPlusIcon[key]);
 	// @ts-ignore
 	app.component(ElementPlusIcon[key].name, ElementPlusIcon[key]);
 });
