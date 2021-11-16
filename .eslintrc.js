@@ -22,6 +22,7 @@ module.exports = {
 		indent: ['warn', 'tab'],
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		indent: 'off',
-		'@typescript-eslint/indent': ['off'],
+		'@typescript-eslint/indent': 'off',
+		'@typescript-eslint/ban-ts-ignore': 'off',
 	},
 };

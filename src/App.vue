@@ -1,7 +1,7 @@
 <template>
 	<el-container class="layout__wrapper">
 		<el-aside class="layout__aside" width="200px">
-			<el-menu default-active="home" text-color="" active-text-color="#f60" background-color="#545c64" router>
+			<el-menu default-active="home" text-color="#fff" active-text-color="#f60" background-color="#545c64" router>
 				<el-menu-item index="/" :route="{ name: 'Home' }">
 					<el-icon><setting /></el-icon>
 					<span>主页</span>

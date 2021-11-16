@@ -33,7 +33,7 @@
 import { Vue, setup } from 'vue-class-component';
 import { useTodos } from '@/composables/use-todos';
 
-export default class extends Vue {
+export default class Todos extends Vue {
 	todos = setup(() => useTodos());
 }
 </script>
