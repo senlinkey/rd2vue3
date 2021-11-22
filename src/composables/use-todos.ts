@@ -1,4 +1,4 @@
-import { reactive } from 'vue';
+import { reactive, watch } from 'vue';
 import { Todo } from '@/ts/todo';
 import { v4 } from 'uuid';
 
@@ -13,7 +13,7 @@ export function useTodos() {
 
 	const state = reactive<State>({
 		newTodo: '',
-		list: todos,
+		list: reactive(todos),
 	});
 
 	function add() {
@@ -24,20 +24,23 @@ export function useTodos() {
 				done: false,
 			});
 			state.newTodo = '';
-			save();
 		}
 	}
+
 	function done(todo: Todo) {
 		todo.done = !todo.done;
-		save();
 	}
+
 	function remove(index: number) {
 		state.list.splice(index, 1);
-		save();
 	}
+
 	function save() {
+		console.log('🚀 ~ file: use-todos.ts ~ line 42 ~ save ~ state.list', state.list);
 		localStorage.setItem('todos', JSON.stringify(state.list));
 	}
+
+	watch(state.list, save);
 
 	return {
 		state,

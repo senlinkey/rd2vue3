@@ -1,19 +1,19 @@
 <template>
 	<el-container class="layout__wrapper">
 		<el-aside class="layout__aside" width="200px">
-			<el-menu default-active="home" text-color="#fff" active-text-color="#f60" background-color="#545c64" router>
-				<el-menu-item index="/" :route="{ name: 'Home' }">
-					<el-icon><setting /></el-icon>
+			<el-menu :default-active="$route.name" text-color="#fff" active-text-color="#f60" background-color="#545c64" router>
+				<el-menu-item index="Home" :route="{ name: 'Home' }">
+					<el-icon><home-filled /></el-icon>
 					<span>主页</span>
 				</el-menu-item>
 
-				<el-menu-item index="/todos" :route="{ name: 'Todos' }">
-					<el-icon><setting /></el-icon>
+				<el-menu-item index="Todos" :route="{ name: 'Todos' }">
+					<el-icon><list /></el-icon>
 					<span>TODO</span>
 				</el-menu-item>
 
-				<el-menu-item index="/docs" :route="{ name: 'Docs' }">
-					<el-icon><setting /></el-icon>
+				<el-menu-item index="Docs" :route="{ name: 'Docs' }">
+					<el-icon><document /></el-icon>
 					<span>文档</span>
 				</el-menu-item>
 			</el-menu>
@@ -41,6 +41,7 @@
 			border-right: none;
 		}
 	}
+
 	&__content {
 		background-color: #f3f5f7;
 		overflow-x: hidden;
