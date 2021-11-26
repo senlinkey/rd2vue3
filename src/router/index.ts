@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Home from '../views/Home.vue';
+import Home from '@/views/Home/index.vue';
 
 const routes: Array<RouteRecordRaw> = [
 	{
@@ -13,12 +13,12 @@ const routes: Array<RouteRecordRaw> = [
 		// route level code-splitting
 		// this generates a separate chunk (todos.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "todos" */ '@/views/Todos.vue'),
+		component: () => import(/* webpackChunkName: "todos" */ '@/views/Todos/index.vue'),
 	},
 	{
 		path: '/docs',
 		name: 'Docs',
-		component: () => import(/* webpackChunkName: "docs" */ '@/views/Docs.vue'),
+		component: () => import(/* webpackChunkName: "docs" */ '@/views/Docs/index.vue'),
 	},
 ];
 

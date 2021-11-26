@@ -1,7 +1,6 @@
 import { reactive, watch } from 'vue';
 import { Todo } from '@/ts/todo';
 import { v4 } from 'uuid';
-
 interface State {
 	list: Todo[];
 	newTodo: string;
@@ -11,18 +10,11 @@ export function useTodos() {
 	const defaultTodos: Todo[] = [{ id: v4(), content: '写一个', done: false }];
 	const todos = JSON.parse(localStorage.getItem('todos')) || defaultTodos;
 
-	const state = reactive<State>({
-		newTodo: '',
-		list: reactive(todos),
-	});
+	const state = reactive<State>({ newTodo: '', list: reactive(todos) });
 
 	function add() {
 		if (state.newTodo) {
-			state.list.push({
-				id: v4(),
-				content: state.newTodo,
-				done: false,
-			});
+			state.list.push({ id: v4(), content: state.newTodo, done: false });
 			state.newTodo = '';
 		}
 	}
@@ -42,11 +34,5 @@ export function useTodos() {
 
 	watch(state.list, save);
 
-	return {
-		state,
-		add,
-		done,
-		remove,
-		save,
-	};
+	return { state, add, done, remove, save };
 }

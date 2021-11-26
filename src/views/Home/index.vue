@@ -16,9 +16,14 @@ export default class Home extends Vue {
 		this.count++;
 	}
 
-	@Confirm({ cancelButtonText: '我不取消' })
+	@Confirm({ cancelButtonText: 'Cancel' })
 	decrement() {
 		this.count--;
+	}
+
+	beforeRouteEnter(to, from, next) {
+		console.log('🚀 ~ file: index.vue ~ line 25 ~ Home ~ beforeRouteEnter ~ to', to);
+		next();
 	}
 }
 </script>
