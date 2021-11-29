@@ -8,15 +8,15 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import PropsExample from './components/PropsExample/index.vue';
+import DecoratorExample from './components/DecoratorExample/index.vue';
 
 @Options({
 	components: {
-		PropsExample,
+		DecoratorExample,
 	},
 })
 export default class Docs extends Vue {
-	list: string[] = ['PropsExample'];
+	list: string[] = ['DecoratorExample'];
 }
 </script>
 
