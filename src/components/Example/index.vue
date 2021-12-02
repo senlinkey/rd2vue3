@@ -20,7 +20,7 @@ import { Vue } from 'vue-class-component';
 import ExampleModule from '@/store/modules/ExampleModule.ts';
 
 export default class Count extends Vue {
-	exampleModule = ExampleModule;
+	exampleModule = ExampleModule1;
 
 	mounted() {
 		let a = 1;
