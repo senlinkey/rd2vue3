@@ -8,7 +8,6 @@
 					</el-icon>
 					<span>主页</span>
 				</el-menu-item>
-
 				<el-menu-item index="Todos" :route="{ name: 'Todos' }">
 					<el-icon>
 						<list />
@@ -36,29 +35,7 @@
 
 <script lang="ts">
 import { Vue } from 'vue-class-component';
-
 export default class App extends Vue {}
 </script>
 
-<style lang="less" scoped>
-.layout {
-	&__wrapper {
-		width: 100vw;
-		height: 100vh;
-	}
-
-	&__aside {
-		background-color: #545c64;
-
-		.el-menu {
-			border-right: none;
-		}
-	}
-
-	&__content {
-		background-color: #f3f5f7;
-		overflow-x: hidden;
-		overflow-y: scroll;
-	}
-}
-</style>
+<style src="./index.less" lang="less" scoped />

@@ -30,7 +30,7 @@
 
 <script lang="ts">
 import { Vue, setup } from 'vue-class-component';
-import { useTodos } from '@/composables/use-todos';
+import { useTodos } from '@/composables/index';
 
 export default class Todos extends Vue {
 	todos = setup(() => useTodos());
@@ -41,4 +41,4 @@ export default class Todos extends Vue {
 }
 </script>
 
-<style scoped></style>
+<style lang="less" scoped></style>

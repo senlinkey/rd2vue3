@@ -10,6 +10,7 @@
 	"dependencies": {
 		"@element-plus/icons": "^0.0.11",
 		"@types/uuid": "^8.3.1",
+		"better-logging": "^4.5.1",
 		"core-js": "^3.6.5",
 		"element-plus": "^1.2.0-beta.3",
 		"prismjs": "^1.25.0",
@@ -20,7 +21,9 @@
 		"vue-prism-editor": "^2.0.0-alpha.2",
 		"vue-property-decorator": "^10.0.0-rc.3",
 		"vue-router": "^4.0.0-0",
-		"vuex": "^4.0.0-0"
+		"vuex": "^4.0.0-0",
+		"vuex-module-decorators": "^2.0.0",
+		"vuex-persistedstate": "^4.1.0"
 	},
 	"devDependencies": {
 		"@types/prismjs": "^1.16.6",

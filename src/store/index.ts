@@ -1,8 +1,6 @@
-import { createStore } from 'vuex';
+import { createStore, createLogger } from 'vuex';
+import createPersistedState from 'vuex-persistedstate';
 
 export default createStore({
-	state: {},
-	mutations: {},
-	actions: {},
-	modules: {},
+	plugins: [createPersistedState({ key: 'rd2vue3-vuex' }), createLogger({})],
 });

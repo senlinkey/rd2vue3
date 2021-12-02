@@ -1,6 +1,7 @@
 import { reactive, watch } from 'vue';
 import { Todo } from '@/ts/todo';
 import { v4 } from 'uuid';
+
 interface State {
 	list: Todo[];
 	newTodo: string;
@@ -28,7 +29,7 @@ export function useTodos() {
 	}
 
 	function save() {
-		console.log('🚀 ~ file: use-todos.ts ~ line 42 ~ save ~ state.list', state.list);
+		console.log('🚀 ~ file: UseTodos.ts ~ line 42 ~ save ~ state.list', state.list);
 		localStorage.setItem('todos', JSON.stringify(state.list));
 	}
 

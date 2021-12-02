@@ -1,14 +1,12 @@
 <template>
 	<div>
 		<PrismEditor v-model="code" :highlight="highlighter" line-numbers />
-
 		<el-row :gutter="10" align="middle">
 			<el-col :span="4">value:1</el-col>
 			<el-col :span="16">
 				<el-input :model-value="value1" @input="handleChange"> </el-input>
 			</el-col>
 		</el-row>
-
 		<el-row :gutter="10" style="margin-top: 10px" align="middle">
 			<el-col :span="4"> value2: </el-col>
 			<el-col :span="16">
