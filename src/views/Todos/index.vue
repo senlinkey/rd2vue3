@@ -1,6 +1,6 @@
 <template>
 	<el-card shadow="never" :body-style="{ padding: '20px' }" style="width: 360px">
-		<template #header>
+		<template slot="header">
 			<span>TODO APP</span>
 		</template>
 		<el-form label-position="top" @submit.prevent>

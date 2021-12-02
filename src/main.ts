@@ -20,4 +20,10 @@ Object.keys(ElementPlusIcon).map((key) => {
 	app.component(ElementPlusIcon[key].name, ElementPlusIcon[key]);
 });
 
-app.use(ElementPlus, { size: 'small', zIndex: 3000 }).use(store).use(router).mount('#app');
+app.use(ElementPlus, {
+	size: 'small',
+	zIndex: 3000,
+})
+	.use(store)
+	.use(router)
+	.mount('#app');
