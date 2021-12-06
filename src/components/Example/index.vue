@@ -5,7 +5,6 @@
 				<el-button @click="exampleModule.increment(2)">加({{ exampleModule.value }})</el-button>
 				<el-button @click="exampleModule.asyncDecrement()" :loading="exampleModule.loading">减({{ exampleModule.value }})</el-button>
 			</el-col>
-
 			<el-col :span="12">
 				<el-button>{{ exampleModule.user }}</el-button>
 				<el-button @click="exampleModule.asyncUpdateUser()" type="primary">update user</el-button>
@@ -17,14 +16,10 @@
 
 <script lang="ts">
 import { Vue } from 'vue-class-component';
-import ExampleModule from '@/store/modules/ExampleModule.ts';
+import ExampleModule from '@/store/modules/ExampleModule';
 
 export default class Count extends Vue {
-	exampleModule = ExampleModule;
-
-	mounted() {
-		let a = 1;
-	}
+	private readonly exampleModule = ExampleModule;
 }
 </script>
 

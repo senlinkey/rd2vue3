@@ -38,7 +38,6 @@
 </template>
 
 <script lang="ts">
-import 'reflect-metadata';
 import { Options, Vue } from 'vue-class-component';
 import { Emit, Prop, Model, Inject, Watch } from 'vue-property-decorator';
 import { PrismEditor } from 'vue-prism-editor';
@@ -47,7 +46,7 @@ import prismjs from 'prismjs';
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/themes/prism-dark.css';
-import { Todo } from '@/ts/todo';
+import { Todo } from '@/ts/Todo.ts';
 import { PropType } from 'vue';
 
 @Options({

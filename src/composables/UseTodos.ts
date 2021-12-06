@@ -1,5 +1,5 @@
 import { reactive, watch } from 'vue';
-import { Todo } from '@/ts/todo';
+import { Todo } from '@/ts/Todo.ts';
 import { v4 } from 'uuid';
 
 interface State {
@@ -8,7 +8,7 @@ interface State {
 }
 
 export function useTodos() {
-	const defaultTodos: Todo[] = [{ id: v4(), content: '写一个', done: false }];
+	const defaultTodos: Todo[] = [{ id: v4(), content: '写一个?', done: false }];
 	const todos = JSON.parse(localStorage.getItem('todos')) || defaultTodos;
 
 	const state = reactive<State>({ newTodo: '', list: reactive(todos) });

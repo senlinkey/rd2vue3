@@ -3,7 +3,10 @@
 		<div>value1: {{ username }}</div>
 		<div>value2: {{ password }}</div>
 		<div>obj.foo: {{ obj.foo }}</div>
-		<div>provideString: <el-input v-model="provideString" /></div>
+		<div>
+			provideString:
+			<el-input v-model="provideString" />
+		</div>
 		<DecoratorChild ref="decorateChild" :propA="1" propB="a123" v-model:obj="obj" v-model:value1="username" v-model:value2="password" @reset="handleReset" :todoProp="todo" />
 	</el-card>
 </template>
@@ -12,6 +15,7 @@
 import { Options, Vue } from 'vue-class-component';
 import { Provide, Ref } from 'vue-property-decorator';
 import DecoratorChild from './DecoratorChild.vue';
+
 @Options({
 	components: {
 		DecoratorChild,
