@@ -24,7 +24,7 @@ export default class Home extends Vue {
 	example1: Example;
 
 	mounted() {
-        console.log(this.example1);
+		console.log(this.example1);
 	}
 
 	increment() {

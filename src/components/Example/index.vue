@@ -5,7 +5,7 @@
 				<el-button @click="exampleModule.increment(2)">加({{ exampleModule.value }})</el-button>
 				<el-button @click="exampleModule.asyncDecrement()" :loading="exampleModule.loading">减({{ exampleModule.value }})</el-button>
 			</el-col>
-			<el-col :span="12">
+			<el-col :span="18">
 				<el-button>{{ exampleModule.user }}</el-button>
 				<el-button @click="exampleModule.asyncUpdateUser()" type="primary">update user</el-button>
 				<el-button @click="exampleModule.asyncUpdateUser2()" type="primary">update user 2</el-button>
