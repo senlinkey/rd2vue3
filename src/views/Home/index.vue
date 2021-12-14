@@ -2,6 +2,7 @@
 	<div class="home__layout">
 		<el-button @click="increment">{{ count }}</el-button>
 		<el-button @click="decrement">{{ count }}</el-button>
+
 		<Example ref="example1" />
 		<Example />
 	</div>
