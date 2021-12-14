@@ -51,8 +51,8 @@
 		"validate-commit-msg": "^2.14.0"
 	},
 	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	}
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
 }
